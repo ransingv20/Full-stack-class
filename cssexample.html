@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector Example</title>
+    <style>
+       html, body, form, fieldset, legend, ol, li {
+	    margin: 0;
+	    padding: 0;
+    }
+        body {
+	    background:white;
+	    color:black;
+	    font-family: Georgia, "Times New Roman", Times, serif;
+	    padding: 20px;
+}
+form {
+	background:rgb(136, 185, 37);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 20px;
+	width: 400px;
+}
+form .yourDetails, .delievryDetails , .button{
+	border: 0;
+	margin-bottom: 10px;
+}
+
+
+form fieldset legend {
+	color:black;
+	font-size: 20px;
+	padding-bottom: 0;
+    font-style:initial
+}
+
+form ol li{
+	
+	
+	background:rgb(180, 228, 109);
+	border-color: rgba(255,255,255,.6);
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	line-height: 30px;
+	padding: 5px 8px;
+    
+}
+
+
+form label {
+	float: left;
+	font-size: 15px;
+	width: 110px;
+}
+.button #buy{
+    padding: 10px;
+    align:center;
+    
+
+}
+</style>
+</head>
+<body>
+    <form>
+        <fieldset class="yourDetails"> 
+            <legend>Step 1 : Your Details</legend>
+            <ol>
+                <li>
+                <label for="name">Name</label>
+            <input type="text" placeholder="First name and Last name" required><br><br>
+        </li>
+        <li>
+            <label >Email</label>
+            <input type="email" placeholder="example@domain.com" required><br><br>
+        </li>
+        <li>
+            <label>Phone</label>
+            <input type="number" placeholder="Mobile No" required>
+        </li>
+            </ol>
+            
+        </fieldset>
+        <fieldset class="delievryDetails">
+            <legend>Step 2 : Delievry Address</legend>
+            <ol>
+                <li>
+                    <label>Address</label>
+                    <textarea id=address required></textarea><br><br>
+                </li>
+            <li>
+            <label>Post Code</label>
+            <input type="number" required><br><br>
+        </li>
+        <li>
+            <label>Country</label>
+        
+            <input type="text" required>
+        </li>
+        </ol>
+        </fieldset>
+        <fieldset class="button">
+            <button id=buy type=submit >Buy it!</button>
+        </fieldset>
+    </form>
+</body>
+</html>

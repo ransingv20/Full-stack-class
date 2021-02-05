@@ -1,0 +1,108 @@
+*{
+    font-family: cursive ;
+}
+table {
+    width: 990px;
+    font-size: x-large;
+    border: none;
+    border-collapse: collapse;
+
+}
+
+#slogan {
+    background-color: forestgreen;
+    color: white;
+    height: 140px;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 60px;
+}
+
+#footer {
+
+    height: 100px;
+    background-color: yellowgreen;
+}
+
+#nav {
+    background-color: yellowgreen;
+    height: 80px;
+
+}
+
+#about {
+    background-image: url(back.jpg);
+    width: 500px;
+    height: 250px;
+    
+
+}
+
+
+#link {
+    background-color: yellowgreen;
+    height: 150px;
+    width: 300px;
+}
+
+#one {
+    
+    height: 100px;
+    width: 300px;
+}
+
+nav li {
+    display: inline;
+    padding: 30px;
+}
+
+li:hover {
+    text-decoration: underline;
+    background-color: forestgreen;
+    
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+position: relative;
+max-width: 800px;
+margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+position: absolute;
+bottom: 0;
+background: rgb(0, 0, 0); /* Fallback color */
+background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+color: #f1f1f1;
+width: 95%;
+padding: 20px;
+}
+p{
+font-size: medium;
+text-decoration: none;
+}
+
+button{
+    background-color: forestgreen;
+    border-radius: 12px;
+    height: 35px;
+    width: 150px;
+    border: none;
+}
+input[type=text],input[type=number]
+{
+    height: 35px;
+    width: 300px;
+}
+#otp{
+    height: 35px;
+    width: 150px;
+}

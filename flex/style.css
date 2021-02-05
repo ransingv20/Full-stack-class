@@ -1,0 +1,44 @@
+a{
+    color: white;
+}
+
+body {
+    font-family: Arial;
+    font-size: 17px;
+  }
+  
+  .content{
+      display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 900px;
+    align-items: center;
+    padding-left: 20px;
+  
+  }
+  
+  .container {
+      position: relative;
+    
+    margin: 0 auto;
+    
+  }
+  .container img{vertical-align: 0;
+  }
+  
+  
+  .container .content {
+      position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 985px;
+    height: 100%;
+   
+    text-align: center;
+  }
+  h1{
+      text-decoration: none;
+  }
+  

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+   <script src="operation.js"></script>
+   <title> VnS Marketplace
+</title>
+<link rel="stylesheet" href="style.css">
+<header style="font-size:large;">
+    <div>
+        <img src="logo.png" style="padding-left: 20px; height: 90px; width: 90px;"> 
+        
+    </div>
+    <div style="padding-left: 20px; font-size: xx-large;width: max-content; font-family: cursive;"> VnS Marketplace</div>
+    
+    
+    <div class="account" style="width: max-content; margin-left: 550px;  padding-left: o; ">
+    <button style=" background-color: rgb(187, 240, 82); font-size: large; border: none; width: max-content;">
+                 <i class="fa fa-user-circle">
+                <l>Register / Sign in</l></i>
+            </button>
+            <div class="account-content" style="font-size: large;">
+               <a href="register.html">Register</a>
+                <a href="sign-in.html">Sign in</a>
+        
+            </div>
+        </div>
+       
+
+    </header>
+        <div class="dropdown" style="width: max-content;">
+        <button class="dropbtn" style="background-color: forestgreen; color: white; padding: 10px; margin-bottom: 10px; border: none;">
+        <i class="fa fa-bars"> </i> 
+        Shop by category
+         </button>
+        <div class="dropdown-content">
+        <a href="fruits.html">Fruits</a>
+        <a href="vegetables.html">Vegetables</a>
+        <a href="home.html">Back to home</a>
+        
+      </div>
+
+    </div>
+    <style>
+        .register{
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            
+        }
+        #submit, #cancel{
+            background-color: forestgreen;
+            border: none;
+            border-radius: 20px;
+            height:50px;
+            width: 90px;
+            color: white;
+        }
+    </style>
+    <script>
+        function signIn()
+        {
+            var user="ransingv20@gmail.com";
+            var savedPass="12345";
+            var a=document.getElementById("username").value;
+            var b=document.getElementById("pass").value;
+            if(user===a && savedPass===b)
+            {
+               // alert("Login Successful");
+                window.location.replace('home.html');
+            }
+            else{
+                alert("Check Username and Password");
+            }
+
+        }
+
+        
+        
+
+    </script>
+</head>
+
+<body>
+    <div class="register">
+        <div class="sub">
+            <form onsubmit=" return validateForm()" name="myform" method="post">
+
+                <fieldset style="width: max-content;">
+                    <legend>Sign-in</legend>
+    
+                    
+    
+                    <label for="username">Email</label><br>
+                    <input type="email" id="username" required><br><br>
+        
+                    <label for="password">Password</label><br>
+                    <input type="password" id="pass" required ><br><br>
+    
+                    
+    
+                    <button  value="Submit" id="submit" onclick="signIn()">Submit</button>
+                    <button id="cancel" onclick="back()">Cancel</button><br><br>
+
+                    
+                </fieldset>
+            </form>
+            
+
+        </div>
+       
+
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div>
+            <p style="font-size: large;"><large>Get in touch</large></p>
+            <hr>
+            <p style="font-size: large;">
+                <span class="fa-stack fa-lg">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+              </span> +91 7020119336</p>
+    
+              <p style="font-size: large;">
+                <span class="fa-stack fa-lg">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span> ifs.sudarshan@gmail.com</p>
+    
+              <p style="font-size: large;">
+                <span class="fa-stack fa-lg">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+              </span>
+             Ahmednagar 413711</p>
+    </div>
+    
+    
+    <div class="follow" style="padding-left: 50px;">
+    <p style="font-size: large;"><large>Follow us</large></p>
+    <hr>
+    
+        <p style="font-size: large;">
+            <span class="fa-stack fa-lg">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+          </span><a href="https://www.facebook.com/">Facebook</a> </p>
+    
+    
+          <p style="font-size: large;">
+            <span class="fa-stack fa-lg">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+          </span><a href="https://www.whatsapp.com/?lang=en">Whatsapp</a> </p>
+    
+          
+    </div>
+    </div>
+    
+    @2020  VnS Technology Private Limited<br>All rights reserved
+    
+    
+        
+        
+        </footer>
+    
+
+ </body>   
+</html>

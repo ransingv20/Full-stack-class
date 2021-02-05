@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> VnS Marketplace
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <header style="font-size:large;">
+        <div>
+            <img src="logo.png" style="padding-left: 20px; height: 90px; width: 90px;"> 
+            
+        </div>
+        <div style="padding-left: 20px; font-size: xx-large;width: max-content; font-family: cursive;"> VnS Marketplace</div>
+        
+        
+        <div class="account" style="width: max-content; height: max-content; margin-left: 500px;  padding-left: o; ">
+         
+            <button style=" background-color: rgb(187, 240, 82); font-size: large; border: none; width: max-content;">
+                 <i class="fa fa-user-circle">
+                <l>My Account</l></i>
+            </button>
+            <div class="account-content" style="font-size: large;">
+               <a href="#">My Orders</a>
+                <a href="#">My Wishlist</a>
+        
+            </div>
+        </div>
+       
+
+    </header>
+        <div class="dropdown" style="width: max-content;">
+        <button class="dropbtn" style="background-color: forestgreen; color: white; padding: 10px; margin-bottom: 10px; border: none;">
+        <i class="fa fa-bars"> </i> 
+        Shop by category
+         </button>
+        <div class="dropdown-content">
+        <a href="fruits.html">Fruits</a>
+        <a href="vegetables.html">Vegetables</a>
+        <a href="home.html">Back to home</a>
+        
+      </div>
+
+    </div>
+       <style>
+           fieldset{
+               border: none;
+           }
+
+           aside {
+            width: 20%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: left;
+            font-style: italic;
+            background-color: white;
+            height: 1000px;
+            border-right: 6px solid green;
+            
+           }
+           #filter{
+               background-color: forestgreen;
+               color: white;
+               width: 100px;
+               border: none;
+               border-radius: 20px;
+               height: 30px;
+           }
+
+          
+
+       </style> 
+
+    </head>
+<body>
+    <aside>
+       
+
+            <br><br>
+        <label for="name">Search by name:</label><br><br>
+        <input type="search" id="name"><br><br>
+        <button id="filter">Search</button><br><br>
+
+        <label>Filter by price:</label><br>
+
+        <input type="radio"  id="10" name="prize" value="10">
+        <label for="10">10 to 20</label><br>
+
+        <input type="radio"  id="20" name="prize" value="20">
+        <label for="20">20 to 30</label><br>
+
+        <input type="radio"  id="30" name="prize" value="30">
+        <label for="30">30 to 40</label><br>
+
+        <input type="radio"  id="40" name="prize" value="40">
+        <label for="40">40 to 50</label><br>
+        <button id="filter">Filter</button>
+        
+        
+        </aside>
+    </aside>
+
+    <div class="flex-container">
+        
+        <form class="flex-child">
+            <fieldset style="width: max-content; box-shadow: grey;">
+            
+                <img src="onion.jpg" alt="" style="height: 170px; width: 200px; margin: 5px;"> <br>
+            
+                <div style="margin-left: 5px;">
+                    Onion-medium/Kanda-madhyam<br>
+           
+                    <fieldset style="margin: 0; border: none; background-color: rgb(226, 221, 221);">  
+                        <small> MRP: 1 kg =<s>60.00</s> 39.00</small><br>
+                        <i class="fa fa-truck" aria-hidden="true"></i>
+                        <small>All slots are full <br>please try again</small><br>
+                        <i class="fa fa-motorcycle"></i>
+                        <small>Express Delivery</small><br>
+                        <label for="qty" style="font-size: small;">Qty:</label>
+                        <select list=qty>
+                            <option value="1">1 kg</option>
+                            <option value="2">2 kg</option>
+                            <option value="5">5 kg</option>
+                        </select>
+                        <button style="background-color: forestgreen; border: none; width: 80px; height: 30px; border-radius: 20px;">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>  
+                         Add</button>
+                
+                    </fieldset>
+                </div>
+            </fieldset>
+          
+        </form>
+        
+    
+          <form class="flex-child">
+            <fieldset style="width: max-content; box-shadow: grey;">
+            
+                <img src="tomato.jpg" alt="" style="height: 170px; width: 200px; margin: 5px;"> <br>
+            
+                <div style="margin-left: 5px;">
+                    Tomato Hybrid/Tomato sankarit<br>
+           
+                    <fieldset style="margin: 0; border: none; background-color: rgb(226, 221, 221);">  
+                        <small> MRP: 1 kg = <s>50.00</s> 36.00</small><br>
+                        <i class="fa fa-truck" aria-hidden="true"></i>
+                        <small>All slots are full <br>please try again</small><br>
+                        <i class="fa fa-motorcycle"></i>
+                        <small>Express Delivery</small><br>
+                        <label for="qty" style="font-size: small;">Qty:</label>
+                        <select list=qty>
+                            <option value="1">1 kg</option>
+                            <option value="2">2 kg</option>
+                            <option value="5">5 kg</option>
+                        </select>
+                        <button style="background-color: forestgreen; border: none; width: 80px; height: 30px; border-radius: 20px;">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>  
+                         Add</button>
+                
+                    </fieldset>
+                </div>
+            </fieldset>
+          
+          </form>
+
+
+
+          <form class="flex-child">
+            <fieldset style="width: max-content; box-shadow: grey;">
+            
+                <img src="potato.jpg" alt="" style="height: 170px; width: 200px; margin: 5px;"> <br>
+            
+                <div style="margin-left: 5px;">
+                    Potato / Batate<br>
+           
+                    <fieldset style="margin: 0; border: none; background-color: rgb(226, 221, 221);">  
+                        <small> MRP: 1 kg =<s>45.00</s> 35.00</small><br>
+                        <i class="fa fa-truck" aria-hidden="true"></i>
+                        <small>All slots are full <br>please try again</small><br>
+                        <i class="fa fa-motorcycle"></i>
+                        <small>Express Delivery</small><br>
+                        <label for="qty" style="font-size: small;">Qty:</label>
+                        <select list=qty>
+                            <option value="1">1 kg</option>
+                            <option value="2">2 kg</option>
+                            <option value="5">5 kg</option>
+                        </select>
+                        <button style="background-color: forestgreen; border: none; width: 80px; height: 30px; border-radius: 20px;">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>  
+                         Add</button>
+                
+                    </fieldset>
+                </div>
+            </fieldset>
+          
+        </form>
+
+        
+        
+</div>
+
+
+<div class="flex-container-second">
+
+    <form class="flex-child">
+        <fieldset style="width: max-content; box-shadow: grey;">
+        
+            <img src="capsicum.png" alt="" style="height: 170px; width: 200px; margin: 5px;"> <br>
+        
+            <div style="margin-left: 5px;">
+                Capsicum-green / Dhobli Mirchi <br>
+       
+                <fieldset style="margin: 0; border: none; background-color: rgb(226, 221, 221);">  
+                    <small> MRP: 1 kg =<s>37.00</s> 28.00</small><br>
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                    <small>All slots are full <br>please try again</small><br>
+                    <i class="fa fa-motorcycle"></i>
+                    <small>Express Delivery</small><br>
+                    <label for="qty" style="font-size: small;">Qty:</label>
+                    <select list=qty>
+                        <option value="1">1 kg</option>
+                        <option value="2">2 kg</option>
+                        <option value="5">5 kg</option>
+                    </select>
+                    <button style="background-color: forestgreen; border: none; width: 80px; height: 30px; border-radius: 20px;">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>  
+                     Add</button>
+            
+                </fieldset>
+            </div>
+        </fieldset>
+      
+      </form>
+
+
+      <form class="flex-child">
+        <fieldset style="width: max-content; box-shadow: grey;">
+        
+            <img src="lady-finger.jpg" alt="" style="height: 170px; width: 200px; margin: 5px;"> <br>
+        
+            <div style="margin-left: 5px;">
+                Lady Finger / Bhendi<br>
+       
+                <fieldset style="margin: 0; border: none; background-color: rgb(226, 221, 221);">  
+                    <small> MRP: 1 kg =<s>55.00</s> 32.00</small><br>
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                    <small>All slots are full <br>please try again</small><br>
+                    <i class="fa fa-motorcycle"></i>
+                    <small>Express Delivery</small><br>
+                    <label for="qty" style="font-size: small;">Qty:</label>
+                    <select list=qty>
+                        <option value="1">1 kg</option>
+                        <option value="2">2 kg</option>
+                        <option value="5">5 kg</option>
+                    </select>
+                    <button style="background-color: forestgreen; border: none; width: 80px; height: 30px; border-radius: 20px;">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>  
+                     Add</button>
+            
+                </fieldset>
+            </div>
+        </fieldset>
+      
+    </form>
+
+
+    <form class="flex-child">
+        <fieldset style="width: max-content; box-shadow: grey;">
+        
+            <img src="cucumber.jpg" alt="" style="height: 170px; width: 200px; margin: 5px;"> <br>
+        
+            <div style="margin-left: 5px;">
+                Cucumber white / Kakadi<br>
+       
+                <fieldset style="margin: 0; border: none; background-color: rgb(226, 221, 221);">  
+                    <small> MRP: 1 kg =<s>55.00</s> 44.00</small><br>
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                    <small>All slots are full <br>please try again</small><br>
+                    <i class="fa fa-motorcycle"></i>
+                    <small>Express Delivery</small><br>
+                    <label for="qty" style="font-size: small;">Qty:</label>
+                    <select list=qty>
+                        <option value="1">1 kg</option>
+                        <option value="2">2 kg</option>
+                        <option value="5">5 kg</option>
+                    </select>
+                    <button style="background-color: forestgreen; border: none; width: 80px; height: 30px; border-radius: 20px;">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>  
+                     Add</button>
+            
+                </fieldset>
+            </div>
+        </fieldset>
+      
+    </form>
+</div>
+
+<div class="third">
+    <form class="flex-child">
+        <fieldset style="width: max-content; box-shadow: grey;">
+        
+            <img src="cabbage.jpg" alt="" style="height: 170px; width: 200px; margin: 5px;"> <br>
+        
+            <div style="margin-left: 5px;">
+                Cabbage / Kobi<br>
+       
+                <fieldset style="margin: 0; border: none; background-color: rgb(226, 221, 221);">  
+                    <small> MRP: 1 kg =<s>21.00</s> 12.00</small><br>
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                    <small>All slots are full <br>please try again</small><br>
+                    <i class="fa fa-motorcycle"></i>
+                    <small>Express Delivery</small><br>
+                    <label for="qty" style="font-size: small;">Qty:</label>
+                    <select list=qty>
+                        <option value="1">1 kg</option>
+                        <option value="2">2 kg</option>
+                        <option value="5">5 kg</option>
+                    </select>
+                    <button style="background-color: forestgreen; border: none; width: 80px; height: 30px; border-radius: 20px;">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>  
+                     Add</button>
+            
+                </fieldset>
+            </div>
+        </fieldset>
+      
+    </form>
+
+    <form class="flex-child">
+        <fieldset style="width: max-content; box-shadow: grey;">
+        
+            <img src="carrot.jpg" alt="" style="height: 170px; width: 200px; margin: 5px;"> <br>
+        
+            <div style="margin-left: 5px;">
+                Carrots-red / Gajar(lal)<br>
+       
+                <fieldset style="margin: 0; border: none; background-color: rgb(226, 221, 221);">  
+                    <small> MRP: 1 kg =<s>47.50</s> 38.00</small><br>
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                    <small>All slots are full <br>please try again</small><br>
+                    <i class="fa fa-motorcycle"></i>
+                    <small>Express Delivery</small><br>
+                    <label for="qty" style="font-size: small;">Qty:</label>
+                    <select list=qty>
+                        <option value="1">1 kg</option>
+                        <option value="2">2 kg</option>
+                        <option value="5">5 kg</option>
+                    </select>
+                    <button style="background-color: forestgreen; border: none; width: 80px; height: 30px; border-radius: 20px;">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>  
+                     Add</button>
+            
+                </fieldset>
+            </div>
+        </fieldset>
+      
+    </form>
+
+
+    <form class="flex-child">
+        <fieldset style="width: max-content; box-shadow: grey;">
+        
+            <img src="sweetcorn.jpg" alt="" style="height: 170px; width: 200px; margin: 5px;"> <br>
+        
+            <div style="margin-left: 5px;">
+                Sweet Corn / Maka (2 pc)<br>
+       
+                <fieldset style="margin: 0; border: none; background-color: rgb(226, 221, 221);">  
+                    <small> MRP: 1 kg =<s>47.50</s> 35.00</small><br>
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                    <small>All slots are full <br>please try again</small><br>
+                    <i class="fa fa-motorcycle"></i>
+                    <small>Express Delivery</small><br>
+                    <label for="qty" style="font-size: small;">Qty:</label>
+                    <select list=qty>
+                        <option value="1">1 kg</option>
+                        <option value="2">2 kg</option>
+                        <option value="5">5 kg</option>
+                    </select>
+                    <button style="background-color: forestgreen; border: none; width: 80px; height: 30px; border-radius: 20px;">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>  
+                     Add</button>
+            
+                </fieldset>
+            </div>
+        </fieldset>
+      
+    </form>
+   
+  </div> 
+  
+  <footer>
+    <div class="footer">
+        <div>
+        <p style="font-size: large;"><large>Get in touch</large></p>
+        <hr>
+        <p style="font-size: large;">
+            <span class="fa-stack fa-lg">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+          </span> +91 7020119336</p>
+
+          <p style="font-size: large;">
+            <span class="fa-stack fa-lg">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+          </span> ifs.sudarshan@gmail.com</p>
+
+          <p style="font-size: large;">
+            <span class="fa-stack fa-lg">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+          </span>
+         Ahmednagar 413711</p>
+</div>
+
+
+<div class="follow" style="padding-left: 50px;">
+<p style="font-size: large;"><large>Follow us</large></p>
+<hr>
+
+    <p style="font-size: large;">
+        <span class="fa-stack fa-lg">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+      </span><a href="https://www.facebook.com/">Facebook</a> </p>
+
+
+      <p style="font-size: large;">
+        <span class="fa-stack fa-lg">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+      </span><a href="https://www.whatsapp.com/?lang=en">Whatsapp</a> </p>
+
+      
+</div>
+</div>
+
+@2020  VnS Technology Private Limited<br>All rights reserved
+
+
+    
+    
+    </footer>
+
+   
+
+</body>
+</html>

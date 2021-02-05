@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #flex-child{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function filter() 
+        { 
+            var ele = document.getElementsByName('prize'); 
+              
+            for(i = 0; i < ele.length; i++) { 
+                if(ele[i].checked) 
+                document.getElementById("result").innerHTML
+                        = "Prize: "+ele[i].value; 
+            }            
+
+        var makaPrize=document.getElementById("mka").value;
+        } 
+
+        function  show() {
+            document.getElementById(one).style.display="block";
+            
+        }
+    </script>
+
+    <aside>
+        <br><br>
+        <label for="name">Search by name:</label><br><br>
+        <input type="search" id="name"><br><br>
+        <button id="filter">Search</button><br><br>
+
+        <label>Filter by price:</label><br>
+
+        <input type="radio"  id="10" name="prize" value="10" onclick="show()">
+        <label for="10">Below 50</label><br>
+
+        <input type="radio"  id="20" name="prize" value="20">
+        <label for="20">50 to 70</label><br>
+
+        <input type="radio"  id="30" name="prize" value="30">
+        <label for="30">70 to 100</label><br>
+
+        <input type="radio"  id="40" name="prize" value="40">
+        <label for="40">Above 100</label><br>
+        <button id="filter" onclick="filter()">Filter</button>
+    
+    </aside>
+
+
+<div id="one">
+    <form class="flex-child">
+        <fieldset style="width: max-content; box-shadow: grey;">
+        
+            <img src="sweetcorn.jpg" alt="" style="height: 170px; width: 200px; margin: 5px;"> <br>
+        
+            <div style="margin-left: 5px;">
+                Sweet Corn / Maka (2 pc)<br>
+       
+                <fieldset style="margin: 0; border: none; background-color: rgb(226, 221, 221);">  
+                    <input type="text" id="mka" disabled value="8"> <br>
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                    <small>All slots are full <br>please try again</small><br>
+                    <i class="fa fa-motorcycle"></i>
+                    <small>Express Delivery</small><br>
+                    <label for="qty" style="font-size: small;">Qty:</label>
+                    <select list=qty>
+                        <option value="1">1 kg</option>
+                        <option value="2">2 kg</option>
+                        <option value="5">5 kg</option>
+                    </select>
+                    <button style="background-color: forestgreen; border: none; width: 80px; height: 30px; border-radius: 20px;">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>  
+                     Add</button>
+            
+                </fieldset>
+            </div>
+        </fieldset>
+      
+    </form>
+
+</div>
+   
+    <div id="result"></div> 
+
+</body>
+</html>

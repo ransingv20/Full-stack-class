@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script> 
+		
+		function dis(val) 
+		{ 
+			document.getElementById("result").value+=val 
+		} 
+		
+		function solve() 
+		{ 
+			let x = document.getElementById("result").value 
+			let y = eval(x) 
+			document.getElementById("result").value = y 
+		} 
+		 
+		function clr() 
+		{ 
+			document.getElementById("result").value = "" 
+		} 
+	</script>
+    <style>
+        input[type=button] {
+            height: 50px;
+             width: 50px; 
+             background-color: rgb(243, 239, 239);
+             margin-bottom: 5px;
+             border: none;
+             font-style:initial;
+             font-size: x-large;
+             
+        }
+        #equal{
+            width: 212px;
+        }
+        #division,#multiply,#sub,#add{
+            background-color:purple;
+            color: white;
+        }
+        #equal{
+            background-color: yellowgreen;
+            color: white;
+        }
+        #clear{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset style="width: max-content;">
+            <input type="text" id=result  style="height: 70px; width: 208px;"/><br><br>
+            <input type="button"  value="1" onclick="dis('1')"/> 
+            <input type="button"   value="2" onclick="dis('2')"/> 
+            <input type="button"   value="3" onclick="dis('3')"> 
+            <input type="button"  id="division" value="/" onclick="dis('/')"><br>
+            <input type="button"   value="4" onclick="dis('4')"> 
+            <input type="button"   value="5" onclick="dis('5')"> 
+            <input type="button"   value="6" onclick="dis('6')"> 
+            <input type="button"  id="multiply" value="*" onclick="dis('*')"> <br>
+            <input type="button"   value="7" onclick="dis('7')"> 
+            <input type="button"  value="8" onclick="dis('8')"> 
+            <input type="button"   value="9" onclick="dis('9')"> 
+            <input type="button"   id="sub" value="-" onclick="dis('-')"> <br>
+            <input type="button"  value="0" onclick="dis('0')"> 
+            <input type="button"   value="." onclick="dis('.')"> 
+            <input type="button"  id="clear" value="c" onclick="clr()"> 
+            <input type="button"   id="add" value="+" onclick="dis('+')"> <br>
+            <input type="button" id="equal" value="=" onclick="solve()">
+        </fieldset>
+    </form>
+</body>
+
+</html>
