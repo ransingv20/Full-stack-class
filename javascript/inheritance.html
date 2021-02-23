@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INheritance</title>
+    <style>
+        fieldset
+        {
+            width: max-content;
+            margin: 200px;
+            margin-left: 400px;
+            padding: 10px;
+        }
+        button
+        {
+            background-color: forestgreen;
+            color: white;
+            border: none;
+            height: 30px;
+            margin-left: 20px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        class operation
+        {
+            constructor()
+            {
+              var n1 = document.getElementById("no1").value;
+              var n2 = document.getElementById("no2").value;
+              this.n1=n1;
+              this.n2=n2;
+            }
+           
+            addition()
+            {
+                console.log(n1+n2);
+                return n1 + n2;
+            }
+            subtraction()
+            {
+                console.log(n1-n2);
+                return no1 - no2;
+            }
+
+        }
+        class display extends operation
+        {
+            displayResult()
+            {
+                document.getElementById("displayAdd").innerHTML = "Addition:" + addition();
+                document.getElementById("displaySub").innerHTML = "Subtraction:" + subtraction();
+            }
+        }
+
+        var objDisplay = new display();
+
+    </script>
+    <form>
+        <fieldset>
+            <legend>Inheritance Example</legend>
+            <div class="forAdd">
+                <input   type="text" id="no1" placeholder="Enter First Number"><br><br>
+                <input   type="text" id="no2" placeholder="Enter Second  Number"><br><br>
+                <button onclick="displayResult()">Add and Subtract</button><br><br>
+                <p id="displayAdd">Addition:</p>
+                <p id="displaySub">Subtraction:</p>
+        
+            </div>
+        </fieldset>
+    </form>
+   
+</body>
+</html>

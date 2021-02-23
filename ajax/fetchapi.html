@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+</head>
+<body>
+    <p id="apiindia"></p>
+    <script type="text/javascript">
+    fetch('https://api.covid19api.com/summary')
+    .then((apidata) => {
+        console.log(apidata);
+        return apidata.json();
+    })
+    .then((actualdata) => {
+       var mydata = actualdata.Countries[76].Country;
+       var data2 = JSON.stringify(mydata);
+       console.log(data2);
+        document.getElementById("apiindia").innerHTML="Country:"+ data2;
+    })
+    .catch((error) =>{
+        console.log(error);
+    });
+
+    </script>
+</body>
+</html>
